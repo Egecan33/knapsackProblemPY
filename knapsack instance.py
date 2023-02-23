@@ -7,15 +7,22 @@ class Item:
         self.value = value
 
 
-# Set the weight capacity of the knapsack
-capacity = 50
+class RandomKnapsack:
+    def __init__(self, num_objects, capacity):
+        self.num_objects = num_objects
+        self.capacity = capacity
+        self.items = [
+            Item(random.randint(1, 10), random.randint(1, 10))
+            for i in range(num_objects)
+        ]
 
-# Set the number of objects to generate
-num_objects = 10
+    def print_items(self):
+        for i, item in enumerate(self.items):
+            print("Item", i + 1, ": Weight:", item.weight, "Value:", item.value)
 
-# Generate random weights and values for each object
-items = [Item(random.randint(1, 10), random.randint(1, 10)) for i in range(num_objects)]
+
+# Create a RandomKnapsack instance with 10 items and a capacity of 50
+rk = RandomKnapsack(10, 50)
 
 # Print the weights and values of the generated items
-for i, item in enumerate(items):
-    print("Item", i + 1, ": Weight:", item.weight, "Value:", item.value)
+rk.print_items()
