@@ -12,6 +12,7 @@ class RandomKnapsack:
         self.num_objects = num_objects
         self.capacity = capacity
         self.items = [
+            ## Create a random item with a random weight and value
             Item(random.randint(1, 10), random.randint(1, 10))
             for i in range(num_objects)
         ]
