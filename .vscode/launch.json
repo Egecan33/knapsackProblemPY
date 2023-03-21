@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "greedyHeuristic",
+            "request": "launch",
+            "mainClass": "greedyHeuristic",
+            "projectName": "knapsackProblemPY_f70f785a"
+        },
+        {
+            "type": "java",
+            "name": "javaKnapsack",
+            "request": "launch",
+            "mainClass": "javaKnapsack",
+            "projectName": "knapsackProblemPY_f70f785a"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
