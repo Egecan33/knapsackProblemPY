@@ -1,0 +1,16 @@
+function value = Topdown(i,v,w,size)
+    take=0; donottake=0;
+
+    if==0
+        value=0;
+    end
+
+    if i>=1
+        if w(i) <= size
+            take = v(i) + Topdown(i-1,v,w,size-w(i));
+        end
+        donottake = Topdown(i-1,v,w,size);
+
+    value =max(take,donottake);
+    end
+end

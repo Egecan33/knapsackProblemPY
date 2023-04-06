@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TopDownKnapsack",
+            "request": "launch",
+            "mainClass": "TopDownKnapsack",
+            "projectName": "knapsackProblemPY_f70f785a"
+        },
+        {
+            "type": "java",
             "name": "greedyHeuristic",
             "request": "launch",
             "mainClass": "greedyHeuristic",
