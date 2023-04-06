@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "dpKnapsak",
+            "request": "launch",
+            "mainClass": "dpKnapsak",
+            "projectName": "knapsackProblemPY_f70f785a"
+        },
+        {
+            "type": "java",
             "name": "TopDownKnapsack",
             "request": "launch",
             "mainClass": "TopDownKnapsack",
